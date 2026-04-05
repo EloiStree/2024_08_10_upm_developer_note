@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 namespace Eloi.Note
 {
-    [CustomEditor(typeof(LinkNoteMono_YoutubeVideo))]
+    [CustomEditor(typeof(YoutubeVideo))]
     public class NoteEditor_YoutubeVideo : Editor
     {
 
@@ -13,7 +13,7 @@ namespace Eloi.Note
         public override void OnInspectorGUI()
         {
 
-            LinkNoteMono_YoutubeVideo myScript = (LinkNoteMono_YoutubeVideo)target;
+            YoutubeVideo myScript = (YoutubeVideo)target;
             
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("Open on Youtube"))

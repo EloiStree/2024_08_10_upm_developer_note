@@ -5,14 +5,14 @@ using UnityEngine;
 
 namespace Eloi.Note
 {
-    [CustomEditor(typeof(LinkNoteMono_LMGTFY))]
+    [CustomEditor(typeof(LMGTFY))]
     public class NoteEditor_LMGTFY : Editor
     {
 
 
         public override void OnInspectorGUI()
         {
-            LinkNoteMono_LMGTFY myScript = (LinkNoteMono_LMGTFY)target;
+            LMGTFY myScript = (LMGTFY)target;
 
             if (GUILayout.Button("Let's me google that for you"))
             {

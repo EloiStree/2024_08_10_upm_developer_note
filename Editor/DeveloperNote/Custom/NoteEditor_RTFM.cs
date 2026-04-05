@@ -4,12 +4,12 @@ using UnityEditor;
 using UnityEngine;
 namespace Eloi.Note
 {
-    [CustomEditor(typeof(LinksNoteMono_RTFM))]
+    [CustomEditor(typeof(RTFMs))]
     public class NoteEditor_RTFM : Editor
     {
         public override void OnInspectorGUI()
         {
-            LinksNoteMono_RTFM myScript = (LinksNoteMono_RTFM)target;
+            RTFMs myScript = (RTFMs)target;
 
             NoteEditor_Links.DrawLinks(myScript, "Read the manuals");
           

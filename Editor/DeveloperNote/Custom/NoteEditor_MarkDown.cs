@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 namespace Eloi.Note
 {
-    [CustomEditor(typeof(NoteMono_MarkDown))]
+    [CustomEditor(typeof(MarkDown))]
     public class NoteEditor_MarkDown : Editor
     {
 
@@ -14,7 +14,7 @@ namespace Eloi.Note
         public override void OnInspectorGUI()
         {
             base.DrawDefaultInspector();
-            NoteMono_MarkDown myScript = (NoteMono_MarkDown)target;
+            MarkDown myScript = (MarkDown)target;
             GUILayout.BeginHorizontal();
             
             if (GUILayout.Button("View as file"))

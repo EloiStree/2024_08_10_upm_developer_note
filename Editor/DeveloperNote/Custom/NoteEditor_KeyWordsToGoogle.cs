@@ -4,14 +4,14 @@ using UnityEditor;
 using UnityEngine;
 namespace Eloi.Note
 {
-    [CustomEditor(typeof(NoteMono_KeyWordsToGoogle), true)]
+    [CustomEditor(typeof(GoogleSearch), true)]
     public class NoteEditor_KeyWordsToGoogle : Editor
     {
 
 
         public override void OnInspectorGUI()
         {
-            NoteMono_KeyWordsToGoogle myScript = (NoteMono_KeyWordsToGoogle)target;
+            GoogleSearch myScript = (GoogleSearch)target;
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("Google"))
             {
